@@ -5,9 +5,9 @@ class MusicPlayer {
    fun songsize() {
         println( "Total Musics: " + songs.size +" Musics")
    }
-   fun add() {
-       
-   }
+   fun add(name:String){
+        songs += name
+    }
     fun show(){
         songs.forEach(){
             item -> println(item)
@@ -26,5 +26,6 @@ fun main(args: Array<String>) {
     m.show()
     m.play()
     m.songsize()
-    m.add()
+    m.add("Titanic")
+    m.show()
 }
